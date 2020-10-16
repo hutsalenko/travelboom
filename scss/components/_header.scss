@@ -1,0 +1,269 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 27rem;
+
+  @media (max-width: 1267px) {
+    margin-bottom: 20rem;
+  }
+
+  &__menu {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 7rem;
+
+    @media (max-width: 360px) {
+      flex-direction: column;
+    }
+
+    &-logo {
+      width: auto;
+      height: auto;
+
+      @media (max-width: 360px) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-wraper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width: 700px) {
+        flex-direction: column;
+      }
+
+      &-nav {
+        a {
+          @include inter-400;
+          text-decoration: none;
+          margin-right: 3.5rem;
+          font-size: 1.6rem;
+          color: $text-secondary;
+
+          &:focus {
+            color: black;
+          }
+
+          @media (max-width: 930px) {
+            margin-right: 2.5rem;
+            font-size: 1.3rem;
+          }
+
+          @media (max-width: 400px) {
+            margin-right: 1.5rem;
+          }
+        }
+
+        @media (max-width: 700px) {
+          margin-bottom: 2rem;
+        }
+      }
+
+      &-buttons {
+        display: flex;
+
+        .left-button {
+          margin-right: 1.8rem;
+        }
+
+        .left-button,
+        .right-button {
+          @include inter-500;
+          border-radius: 1rem;
+          background-color: #fff;
+          outline: none;
+          color: $text-color;
+          width: 13rem;
+          height: 4rem;
+          box-shadow: none;
+          border: 0.2rem solid $text-color;
+
+          &:hover {
+            background-color: $text-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 14rem;
+      position: relative;
+
+      @media (max-width: 1267px) {
+        margin-right: 10rem;
+      }
+
+      @media (max-width: 700px) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
+
+      &-cross {
+        position: absolute;
+        right: 0;
+        top: 10%;
+      }
+
+      &-title {
+        @include playfair-700;
+        font-size: 6.4rem;
+        margin-bottom: 7.5rem;
+        text-align: center;
+
+        @media (max-width: 1267px) {
+          font-size: 5.4rem;
+          margin-bottom: 5.5rem;
+        }
+
+        @media (max-width: 930px) {
+          font-size: 4rem;
+          margin-bottom: 4rem;
+        }
+      }
+
+      &-subtitle {
+        @include inter-600;
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+
+        @media (max-width: 1267px) {
+          font-size: 2.2rem;
+        }
+        @media (max-width: 930px) {
+          font-size: 2rem;
+        }
+      }
+
+      &-line {
+        width: 10%;
+        border-bottom: 3px solid #000;
+        margin-bottom: 5rem;
+      }
+
+      &-options {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 4.7rem;
+
+        @media (max-width: 1180px) {
+          flex-direction: column;
+        }
+
+        @media (max-width: 700px) {
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .options-location,
+        .options-activity,
+        .options-grade,
+        .options-date {
+          @include inter-400;
+          width: 20rem;
+          font-size: 1.5rem;
+          padding: 1.5rem 7rem 1.5rem 2rem;
+          border-radius: 1rem;
+          outline: none;
+
+          @media (max-width: 1267px) {
+            padding: 1rem 5rem 1rem 1.5rem;
+          }
+
+          @media (max-width: 930px) {
+            padding: 1rem 3rem 1rem 1rem;
+          }
+
+          @media (max-width: 1180px) {
+            margin-bottom: 3rem;
+          }
+        }
+
+        .options-location {
+          margin-bottom: 3.5rem;
+          margin-right: 3rem;
+
+          @media (max-width: 477px) {
+            margin-right: 1rem;
+          }
+
+          @media (max-width: 456px) {
+            margin-right: 0;
+          }
+        }
+
+        .options-grade {
+          margin-right: 3rem;
+
+          @media (max-width: 477px) {
+            margin-right: 1rem;
+          }
+
+          @media (max-width: 456px) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      &-button {
+        @include mulish-700;
+        width: 18rem;
+        height: 5rem;
+        border-radius: 1rem;
+        background-color: $text-color;
+        color: #fff;
+        font-size: 1.7rem;
+        outline: none;
+        border: 2px solid $text-color;
+
+        &:active {
+          background-color: #bb6100;
+        }
+      }
+    }
+
+    &-right {
+      max-width: 68.7rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        @media (max-width: 1400px) {
+          width: 100%;
+          height: auto;
+        }
+
+        @media (max-width: 700px) {
+          width: 80%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

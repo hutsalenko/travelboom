@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Inter/inter-v2-latin-regular.eot");
+  src: local(""), url("../fonts/Inter/inter-v2-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter/inter-v2-latin-regular.woff2") format("woff2"),
+    url("../fonts/Inter/inter-v2-latin-regular.woff") format("woff"),
+    url("../fonts/Inter/inter-v2-latin-regular.ttf") format("truetype"),
+    url("../fonts/Inter/inter-v2-latin-regular.svg#Inter") format("svg");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Inter/inter-v2-latin-500.eot");
+  src: local(""), url("../fonts/Inter/inter-v2-latin-500.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter/inter-v2-latin-500.woff2") format("woff2"),
+    url("../fonts/Inter/inter-v2-latin-500.woff") format("woff"),
+    url("../fonts/Inter/inter-v2-latin-500.ttf") format("truetype"),
+    url("../fonts/Inter/inter-v2-latin-500.svg#Inter") format("svg");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Inter/inter-v2-latin-600.eot");
+  src: local(""), url("../fonts/Inter/inter-v2-latin-600.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter/inter-v2-latin-600.woff2") format("woff2"),
+    url("../fonts/Inter/inter-v2-latin-600.woff") format("woff"),
+    url("../fonts/Inter/inter-v2-latin-600.ttf") format("truetype"),
+    url("../fonts/Inter/inter-v2-latin-600.svg#Inter") format("svg");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Inter/inter-v2-latin-700.eot");
+  src: local(""), url("../fonts/Inter/inter-v2-latin-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Inter/inter-v2-latin-700.woff2") format("woff2"),
+    url("../fonts/Inter/inter-v2-latin-700.woff") format("woff"),
+    url("../fonts/Inter/inter-v2-latin-700.ttf") format("truetype"),
+    url("../fonts/Inter/inter-v2-latin-700.svg#Inter") format("svg");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Playfair/playfair-display-v21-latin-700.eot");
+  src: local(""),
+    url("../fonts/Playfair/playfair-display-v21-latin-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Playfair/playfair-display-v21-latin-700.woff2") format("woff2"),
+    url("../fonts/Playfair/playfair-display-v21-latin-700.woff") format("woff"),
+    url("../fonts/Playfair/playfair-display-v21-latin-700.ttf") format("truetype"),
+    url("../fonts/Playfair/playfair-display-v21-latin-700.svg#PlayfairDisplay") format("svg");
+}
+
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Mulish/mulish-v1-latin-300.eot");
+  src: local(""), url("../fonts/Mulish/mulish-v1-latin-300.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Mulish/mulish-v1-latin-300.woff2") format("woff2"),
+    url("../fonts/Mulish/mulish-v1-latin-300.woff") format("woff"),
+    url("../fonts/Mulish/mulish-v1-latin-300.ttf") format("truetype"),
+    url("../fonts/Mulish/mulish-v1-latin-300.svg#Mulish") format("svg");
+}
+
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Mulish/mulish-v1-latin-regular.eot");
+  src: local(""), url("../fonts/Mulish/mulish-v1-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Mulish/mulish-v1-latin-regular.woff2") format("woff2"),
+    url("../fonts/Mulish/mulish-v1-latin-regular.woff") format("woff"),
+    url("../fonts/Mulish/mulish-v1-latin-regular.ttf") format("truetype"),
+    url("../fonts/Mulish/mulish-v1-latin-regular.svg#Mulish") format("svg");
+}
+
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Mulish/mulish-v1-latin-700.eot");
+  src: local(""), url("../fonts/Mulish/mulish-v1-latin-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Mulish/mulish-v1-latin-700.woff2") format("woff2"),
+    url("../fonts/Mulish/mulish-v1-latin-700.woff") format("woff"),
+    url("../fonts/Mulish/mulish-v1-latin-700.ttf") format("truetype"),
+    url("../fonts/Mulish/mulish-v1-latin-700.svg#Mulish") format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 144rem;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(206, 206, 206);
+}
